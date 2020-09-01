@@ -30,12 +30,12 @@ export default class App extends Component {
         },
         {
           name: "Paulaner Hefe-Weißbier",
-          color: "weiss",
+          color: "white",
           id: 3,
           country: "Germany",
           price: "1 Euro",
           image_url:
-            "https://www.paulaner.com/content/8-us/2-our-products/1-hefe-weizen/modules/1-product_intro-1uh606t/bottle-usa-1000x1550-hwbn-1.png",
+            "https://www.xxl-limousinen.de/images/com_hikashop/upload/thumbnails/400x400f/paulaner.jpg",
         },
         {
           name: "Budweiser ",
@@ -123,24 +123,22 @@ export default class App extends Component {
   }
   render() {
 
-    return (
+    const datas = this.state.biers.map((bier) => (<Card
+    key={bier.id}
+    name={bier.name}
+    color={bier.color}
+    country={bier.country}
+    price={bier.price}
+    img_url={bier.image_url}
+  /> ))
     
-      this.state.biers.map((bier) => {
-        return(
+    return (
+      <>
+          <Header />
           <div className="products_wrapper">
-          
-            <Card
-              key={bier.id}
-              name={bier.name}
-              color={bier.color}
-              country={bier.country}
-              price={bier.price}
-              img_url={bier.image_url}
-            />
+            {datas}
           </div>
-        )
-      })
-      
+      </>
     )
   }
 }
