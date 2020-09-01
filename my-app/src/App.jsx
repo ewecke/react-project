@@ -1,5 +1,6 @@
-import React, { Component } from "react";
-import Card from "./components/Card";
+import React, { Component } from "react"
+import Card from "./components/Card"
+import "./css/App.css"
 
 export default class App extends Component {
   constructor(props) {
@@ -87,20 +88,20 @@ export default class App extends Component {
             "https://res.cloudinary.com/ratebeer/image/upload/w_250,c_limit/beer_4530.jpg",
         },
         {
-          name: "Efes",
+          name: "Zagovor",
           color: "light",
           id: 11,
-          country: "Turkey",
+          country: "Russia",
           img_url:
-            "https://dydza6t6xitx6.cloudfront.net/ci-efes-pilsner-dd648610b801542b.png",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/0240c526441469.5844657dc78f8.png",
         },
         {
-          name: "Kostritzer",
-          color: "dark",
+          name: "Radler",
+          color: "light",
           id: 12,
           country: "Germany",
           img_url:
-            "https://dydza6t6xitx6.cloudfront.net/ci-kostritzer-schwarzbier-lager-84211b9a8a968b81.png",
+            "https://images-na.ssl-images-amazon.com/images/I/71s-0QryNxL._SL1500_.jpg",
         },
       ],
     };
@@ -111,13 +112,15 @@ export default class App extends Component {
 
       this.state.biers.map((bier) => {
         return(
-      <Card
-        name={bier.name}
-        color={bier.color}
-        id={bier.id}
-        country={bier.country}
-        img_url={bier.image_url}
-      />
+          <div className="products_wrapper">
+            <Card
+              key={bier.id}
+              name={bier.name}
+              color={bier.color}
+              country={bier.country}
+              img_url={bier.image_url}
+            />
+          </div>
       )
     })
     )
