@@ -107,7 +107,7 @@ export default class App extends Component {
           country: "Russia",
           price: "1 Euro",
           image_url:
-            "https://mir-s3-cdn-cf.behance.net/project_modules/fs/0240c526441469.5844657dc78f8.png",
+            "https://beerbay.net/img/beer/puhaste/trinity-in-black-fb.webp",
         },
         {
           name: "Radler",
