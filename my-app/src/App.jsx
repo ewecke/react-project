@@ -1,6 +1,9 @@
 import React, { Component } from "react"
 import Card from "./components/Card"
 import "./css/App.css"
+import Header from './components/Header';
+import About from './components/About';
+import './css/pei.css';
 
 export default class App extends Component {
   constructor(props) {
@@ -139,6 +142,3 @@ export default class App extends Component {
       })
       
     )
-
-  }
-}
