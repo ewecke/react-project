@@ -6,7 +6,8 @@ import Cart from "./Cart"
 import Header from "./Header"
 import About from './About';
 import Help from "./Help"
-import NotFound from "./NotFound" 
+import NotFound from "./NotFound"
+import Search from "./Search" 
 
 
 export default class Main extends Component {
@@ -15,7 +16,8 @@ export default class Main extends Component {
         super(props);
         this.state = {
           data: data,
-          cart: [] 
+          cart: [],
+          currentSearch: '' 
         };
       }
 
@@ -34,11 +36,29 @@ export default class Main extends Component {
         });
       }   
 
+      handleOnChange = (e) => {
+        this.setState({
+            currentSearch: e.target.value.toLowerCase()
+        })
+    }
+      search = () => {
+        
+        const filteredBeers = this.state.data.filter(
+          item => item.country.toLowerCase().includes(this.state.currentSearch)); 
+          this.setState({
+            data: filteredBeers
+        })
+      }
+    
+  
+
+
     render () {
 
     return (
       <BrowserRouter>
         <Header length={this.state.cart.length}/>
+        <Search handleOnChange={this.handleOnChange} search={this.search}/>
         <Switch>
         
         <Route path="/" exact>

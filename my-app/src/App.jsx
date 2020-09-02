@@ -3,7 +3,7 @@ import Card from "./components/Card";
 import "./css/App.css";
 import './css/pei.css';
 import NotFound from "./components/NotFound";
-import Search from "./components/Search";
+
 
 
 export default function App ({data, addToCart, cart} ) {
@@ -21,6 +21,7 @@ export default function App ({data, addToCart, cart} ) {
     
     return (
       <>
+          
           <div className="products_wrapper">
           {datas}
           </div>
