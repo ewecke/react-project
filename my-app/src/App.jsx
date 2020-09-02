@@ -21,12 +21,6 @@ export default function App ({data, addToCart, cart} ) {
     
     return (
       <>
-<<<<<<< HEAD
-          <Header />
-          <Search />
-=======
-
->>>>>>> 86f46be002418dc109369291e2e188fb49e3ab6d
           <div className="products_wrapper">
           {datas}
           </div>

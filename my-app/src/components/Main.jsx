@@ -5,6 +5,8 @@ import App from "../App"
 import Cart from "./Cart"
 import Header from "./Header"
 import About from './About';
+import Help from "./Help"
+import NotFound from "./NotFound" 
 
 
 export default class Main extends Component {
@@ -26,7 +28,7 @@ export default class Main extends Component {
     render () {
 
     return (
-       <BrowserRouter>
+      <BrowserRouter>
        <Header length={this.state.cart.length}/>
         <Switch>
         
@@ -39,6 +41,8 @@ export default class Main extends Component {
         <Route path="/cart" exact>
             <Cart cart={this.state.cart}/>
         </Route>
+        <Route path="/help" component={Help} exact/>
+        <Route component={NotFound} />
 
         </Switch>        
         </BrowserRouter>
