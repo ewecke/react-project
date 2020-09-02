@@ -29,7 +29,7 @@ export default class Main extends Component {
 
     return (
       <BrowserRouter>
-       <Header length={this.state.cart.length}/>
+        <Header length={this.state.cart.length}/>
         <Switch>
         
         <Route path="/" exact>
