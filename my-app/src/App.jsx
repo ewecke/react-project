@@ -5,9 +5,9 @@ import './css/pei.css';
 import NotFound from "./components/NotFound";
 
 
-export default function App ({data}) {
+export default function App ({data, addToCart, cart} ) {
   
-/*     const datas = data.map((bier) => (<Card
+    const datas = data.map((bier) => (<Card
     key={bier.id}
     id={bier.id}
     name={bier.name}
@@ -15,15 +15,15 @@ export default function App ({data}) {
     country={bier.country}
     price={bier.price}
     img_url={bier.image_url}
-    addToCart={this.addToCart}
-  /> )) */
+    addToCart={addToCart}
+  /> ))
     
     return (
       <>
 
-            <div className="products_wrapper">
-   {/*          {datas} */}
-            </div>
+          <div className="products_wrapper">
+          {datas}
+          </div>
 
       </>
     )
