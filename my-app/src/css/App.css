@@ -20,6 +20,13 @@
     font-size: 2em;
 }
 
+.productCard:hover {
+    border: 3px solid black;
+    transform: scale(1.1);
+    transition: 0.4s all;
+}
+
+
 .bier-img {
     height: 410px;
     width: 330px;
