@@ -5,6 +5,7 @@ import Header from './components/Header';
 import About from './components/About';
 import './css/pei.css';
 import NotFound from "./components/NotFound";
+import Search from "./components/Search";
 
 export default class App extends Component {
   constructor(props) {
@@ -136,6 +137,7 @@ export default class App extends Component {
     return (
       <>
           <Header />
+          <Search />
           <div className="products_wrapper">
             {datas}
           </div>
