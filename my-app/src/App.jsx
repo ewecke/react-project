@@ -4,7 +4,7 @@ import "./css/App.css"
 import Header from './components/Header';
 import About from './components/About';
 import './css/pei.css';
-import NotFound from "./components/NotFound.jsx";
+import NotFound from "./components/NotFound";
 
 export default class App extends Component {
   constructor(props) {
