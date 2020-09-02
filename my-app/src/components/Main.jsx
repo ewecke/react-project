@@ -25,6 +25,15 @@ export default class Main extends Component {
         this.setState({cart: [...this.state.cart, temp[0]]})
       }
 
+      removeFromCart = (id) => {
+        const index = this.state.cart.findIndex(item => item.id === id);
+        const newBeerArr = [...this.state.cart];
+        newBeerArr.splice(index, 1);
+        this.setState({
+          cart: newBeerArr
+        });
+      }   
+
     render () {
 
     return (
@@ -39,7 +48,7 @@ export default class Main extends Component {
         <Route path="/about" component={About} exact/>
 
         <Route path="/cart" exact>
-            <Cart cart={this.state.cart}/>
+            <Cart cart={this.state.cart} removeFromCart={this.removeFromCart}/>
         </Route>
         <Route path="/help" component={Help} exact/>
         <Route component={NotFound} />
