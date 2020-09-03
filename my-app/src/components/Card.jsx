@@ -12,9 +12,9 @@ export default function Card({name, color, country, img_url, id, price, addToCar
             </p>
             <p>price: {price}</p>
 
-            <button className="shop-cart-btn" onClick={()=> addToCart(id)}>Add to <span>&#x1f6d2;</span></button>
+           
 
-            <button className="shop-cart-btn" onClick={()=> addToCart(id)}>Add to <span id="trolly-icon">&#x1f6d2;</span></button>
+             <button className="shop-cart-btn" onClick={()=> addToCart(id)}>Add to <span id="trolly-icon">&#x1f6d2;</span></button> 
 
         </div>
     )

@@ -8,7 +8,7 @@ import About from './About';
 import Help from "./Help"
 import NotFound from "./NotFound"
 import Search from "./Search" 
-import Footer from './Footer';
+import Footer from "./Footer";
 
 
 export default class Main extends Component {
@@ -60,12 +60,13 @@ export default class Main extends Component {
       <BrowserRouter>
         <Header length={this.state.cart.length}/>
         <Search handleOnChange={this.handleOnChange} search={this.search}/>
+          
         <Switch>
         
         <Route path="/" exact>
             <App data={this.state.data} addToCart={this.addToCart} cart={this.state.cart} />      
         </Route>
-
+        
         <Route path="/about" component={About} exact/>
 
         <Route path="/cart" exact>
@@ -73,8 +74,10 @@ export default class Main extends Component {
         </Route>
         <Route path="/help" component={Help} exact/>
         <Route component={NotFound} />
+        
+        </Switch> 
 
-        </Switch>        
+        <Footer />
         </BrowserRouter>
         )
     }
