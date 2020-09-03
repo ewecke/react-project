@@ -1,3 +1,150 @@
+/* Pei start*/
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+* {
+
+  
+  
+  
+}
+
+html{
+  background: url(../img/main-background.jpg) fixed;
+  background-size: cover;
+  background-repeat: repeat-y;
+  font-family: 'Carter One', cursive;
+}
+
+.header {
+  font-family: 'Carter One', cursive;
+  font-size: 70px;
+  color: rgb(226, 236, 102);
+  text-align: center;
+  display: flex;
+  padding-left: 390px;
+  text-shadow: 4px 2px 3px#000;
+}
+
+.logo {
+  margin-top: 10px;
+  width: 300px;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: -60px;
+}
+
+.txtlogo{
+  margin-top: 160px;
+}
+
+
+.about {
+  font-family: 'Carter One', cursive;
+  font-size: 40px;
+  margin-left: 3%;
+  color: rgb(226, 236, 102);
+}
+
+.column {
+  color: rgba(49, 28, 16);
+  float: left;
+  width: 30%;
+  padding: 5px;
+  margin-left: 1%;
+  font-size: 22px;
+}
+
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.h3Color {
+  color: rgb(226, 236, 102);
+}
+
+footer {
+  color: rgb(46, 32, 32);
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.brezel {
+  padding: 10px;
+  margin-top: 130px;
+  width: 6%;
+  height: 150px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar{
+  justify-content:center;
+  text-align: center;
+  margin: 10px;
+  border-radius: 18px;
+  background-color: rgb(32, 32, 32, 0.3 );
+  align-items: center;
+  display: flex;
+}
+
+.search-bar div{
+}
+
+.search-bar h3{
+  font-weight: 100;
+  margin: 10px;
+  color: aliceblue;
+}
+
+.serch-input{
+  display: flex;
+}
+
+/* 
+a {
+  margin-left: 5%;
+} */
+
+/* Pei< */
+.bier-img {
+  box-shadow: -30px 20px 5px rgba(110, 78, 32, 0.411);
+  border-radius: 50px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+div.productCard {
+  border: 10px solid rgba(49, 28, 16, 0.664);
+  border-radius: 50px;
+  border-width: 10px;
+  color: rgba(49, 28, 16);
+}
+
+.nav-bar {
+  font-size: 30px;
+  text-align: center;
+}
+
+#trolly-icon {
+  text-shadow: 4px 2px 3px#000;
+  font-size: 40px;
+}
+
+/* 
+Pei Ends */
+
+
 .products_wrapper {
   width: 100%;
   display: flex;
@@ -31,12 +178,12 @@
 }
 
 .bier-name {
-  margin-top: 0.5%;
+  margin: 0px;
   text-shadow: 1px 1px 2px white;
 }
 
 .bier-color {
-  margin: 0.8% 0.1%;
+  margin: 5px;
 }
 
 .bier-country {
@@ -45,14 +192,19 @@
 }
 
 .shop-cart-btn {
-
-    width: 100px;
-    height: 48px;
-    font-weight: 600;
-    background-color: rgb(207, 141, 60);
+  border: 2px solid #fff;
+  text-shadow: 2px 2px 3px#000;
+  color: aliceblue;
+  font-size: 35px;
+  border-radius: 18px;
+  width: 330px;
+  height: 48px;
+  font-weight: 600;
+  background-color: rgba(43, 203, 251, 0.6);
+    
 }
 .shop-cart-btn:hover{
-    background-color: rgb(82, 71, 71);
+    background-color: rgba(83, 243, 136, 0.60);
     transition: 0.5s all;
 
 
