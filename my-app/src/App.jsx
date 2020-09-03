@@ -5,6 +5,7 @@ import './css/pei.css';
 import NotFound from "./components/NotFound";
 
 
+
 export default function App ({data, addToCart, cart} ) {
   
     const datas = data.map((bier) => (<Card
@@ -20,7 +21,7 @@ export default function App ({data, addToCart, cart} ) {
     
     return (
       <>
-
+          
           <div className="products_wrapper">
           {datas}
           </div>

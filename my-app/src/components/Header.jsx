@@ -6,6 +6,7 @@ import brezel from '../img/brezel.png';
 const Header = ({ length }) => {
   return (
     <header>
+
       <h1 className="header">
         <img className="brezel" src={brezel} alt="brezel" />
         <img className="brezel" src={brezel} alt="brezel" />
@@ -20,6 +21,7 @@ const Header = ({ length }) => {
         <Link to="/about">About  </Link>
         <Link to="./help">Help</Link>
       </div>
+
     </header>
   );
 };
