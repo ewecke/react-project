@@ -44,7 +44,7 @@ export default class Main extends Component {
       search = () => {
         
         const filteredBeers = this.state.data.filter(
-          item => item.country.toLowerCase().includes(this.state.currentSearch)); 
+          item => item.country.toLowerCase().includes(this.state.currentSearch) || item.color.toLowerCase().includes(this.state.currentSearch)); 
           this.setState({
             data: filteredBeers
         })
@@ -68,7 +68,7 @@ export default class Main extends Component {
         <Route path="/about" component={About} exact/>
 
         <Route path="/cart" exact>
-            <Cart cart={this.state.cart} removeFromCart={this.removeFromCart}/>
+            <Cart cart={this.state.cart} removeFromCart={this.removeFromCart} sum={this.state.cart.length}/>
         </Route>
         <Route path="/help" component={Help} exact/>
         <Route component={NotFound} />
