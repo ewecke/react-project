@@ -10,10 +10,12 @@ const Header = ({ length }) => {
       <div className="nav-bar">
         <div className="left">
           <Link to="/about">About</Link>
+
           <Link to="./help">Help</Link>
         </div>
+        
       <div className="right">
-      <Link to="/cart">Go to cart {length}  </Link>
+      <Link to="/cart">&#x1f6d2; ( {length} )  </Link>
       </div>
        
       </div>

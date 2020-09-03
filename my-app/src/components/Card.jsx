@@ -5,12 +5,14 @@ export default function Card({name, color, country, img_url, id, price, addToCar
     
     return (
         <div className="productCard" key={id}>
+            <div className="img-card">
             <img src={img_url} alt="bier sort" className="bier-img"/>
+            </div>
             <h3 className="bier-name">{name}</h3>
             <p className="bier-color">{color}</p>
             <p className="bier-country">country: {country}
             </p>
-            <p>price: {price}</p>
+            <p className="bier-price"> {price}</p>
 
            
 

@@ -12,10 +12,12 @@ console.log(cart);
 
     return (
         <>
-        <h1>Items in cart</h1>
-        <h2>Sum of your order: {sum} Euro</h2>
-        <div className="products_wrapper">
-        {cartItems}
+        <div className="txt">
+            <h1>Items in cart</h1>
+            <h2>Sum of your order: {sum} Euro</h2>
+            <div className="products_wrapper">
+            {cartItems}
+            </div>
         </div>
         </>
     )

@@ -1,13 +1,6 @@
 /* Pei start*/
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
-* {
-
-  
-  
-  
-}
-
 html{
   background: url(../img/main-background.jpg) fixed;
   background-size: cover;
@@ -16,21 +9,65 @@ html{
 }
 
 .header {
-  font-family: 'Carter One', cursive;
-  font-size: 70px;
-  color: rgb(226, 236, 102);
+  padding-top:  25px;
+  padding-left: 75px;
+  text-align: center;
   text-align: center;
   display: flex;
-  padding-left: 390px;
-  text-shadow: 4px 2px 3px#000;
+}
+
+.nav-bar {
+  position: relative;
+  z-index: 3;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left a{
+  padding: 10px 20px 10px 10px;
+  margin-right: 20px;
+  margin-top: 0px;
+  color: rgb(251, 255, 30);
+  text-shadow: 6px 1px 1px#000;
+  border-radius: 0px 0px 20px 20px;
+  border: 3px solid #fff;
+  box-shadow: 4px 3px 1px#000;
+  background-color: rgba(99, 175, 233, 0.7);
+} 
+
+.left a:hover{
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px solid rgb(251, 255, 30);
+  transition: 0.5s all;
+}
+
+.right a {
+  padding: 10px 20px 10px 10px;
+  color: rgb(251, 255, 30);
+  text-shadow: 6px 1px 1px#000;
+  border-radius: 0px 0px 20px 20px;
+  border: 3px solid #fff;
+  box-shadow: 4px 3px 1px#000;
+  background-color: rgba(99, 175, 233, 0.7);
+}
+
+.right a:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px solid rgb(251, 255, 30);
+  transition: 0.5s all;
 }
 
 .logo {
-  margin-top: 10px;
-  width: 300px;
+  padding-top: 8px;
+  margin-right: -49px;
+  margin-left: -35px;
+  width: 350px;
 }
 
 .logo-container{
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,15 +76,102 @@ html{
 }
 
 .txtlogo{
-  margin-top: 160px;
+  font-family: 'Carter One', cursive;
+  font-size: 70px;
+  color: rgb(226, 236, 102);
+  margin-top: 50px;
+  margin-bottom: 0px;
+
+  text-shadow: 8px 3px 2px#000;
 }
+
+
+.brezel {
+  padding: 10px;
+  margin-top:50px;
+  height: 100px;
+}
+
+
+.search-bar {
+  margin: 25px 30px 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: rgba(43, 203, 251, 0.4);
+}
+
+.search-bar h3{
+  font-size: 2em;
+  font-weight: 100;
+  margin: 10px 90px 10px 0px ;
+  color: aliceblue;
+  text-shadow: 4px 2px 3px#000;
+}
+
+.txt{
+  margin: 15px 30px 20px 30px;
+  color: #fff;
+  text-shadow: 4px 2px 3px#000;
+}
+.search-bar input{
+  font-style: italic;
+  width: 300px;
+  height: 40px;
+  border-radius: 12px;
+  font-size: 18px;
+  padding-left:15px;
+  border:0
+}
+.notFound{
+  text-align: center;
+  color: #fff;
+  text-shadow: 4px 2px 3px#000;
+}
+.search-bar input:focus {
+  border:0;
+}
+
+.search-bar button{
+  color: #66666;
+  font-size: 22px;
+  width: 150px;
+  margin-left: 20px;
+  height: 40px;
+  border-radius: 12px;
+  border:0
+}
+
+.search-bar button:hover{
+  background-color: #225594;
+  color: #fff;
+  font-size: 22px;
+  width: 150px;
+  margin-left: 20px;
+  height: 40px;
+  border-radius: 12px;
+  border:0
+}
+
+.serch-input{
+  display: flex;
+}
+
+/* 
+a {
+  margin-left: 5%;
+} */
+
+/* Pei< */
 
 
 .about {
   font-family: 'Carter One', cursive;
   font-size: 40px;
-  margin-left: 3%;
-  color: rgb(226, 236, 102);
+  margin: 15px 30px 20px 30px;
+  color: #fff;
+  text-shadow: 4px 2px 3px#000;
 }
 
 .column {
@@ -66,62 +190,35 @@ html{
 }
 
 .h3Color {
-  color: rgb(226, 236, 102);
+  margin-top: -32px;
+  color: #fff;
+  text-shadow: 4px 2px 3px#000;
 }
 
 footer {
-  color: rgb(46, 32, 32);
-  font-size: 20px;
+  align-items: center;
+
+  justify-content: center;
+  margin: 15px 30px 20px 30px;
+  color: #fff;
+  text-shadow: 4px 2px 3px#000;
+  font-size: 26px;
   margin-bottom: 20px;
   text-align: center;
+  padding-bottom: 60px;
 }
 
-.brezel {
-  padding: 10px;
-  margin-top: 130px;
-  width: 6%;
-  height: 150px;
-}
-
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.search-bar{
-  justify-content:center;
+.img-card{
   text-align: center;
-  margin: 10px;
-  border-radius: 18px;
-  background-color: rgb(32, 32, 32, 0.3 );
-  align-items: center;
-  display: flex;
+  background-color: #fff;
+  border-radius: 35px;
+  width: 100%;
 }
 
-.search-bar div{
-}
-
-.search-bar h3{
-  font-weight: 100;
-  margin: 10px;
-  color: aliceblue;
-}
-
-.serch-input{
-  display: flex;
-}
-
-/* 
-a {
-  margin-left: 5%;
-} */
-
-/* Pei< */
 .bier-img {
-  box-shadow: -30px 20px 5px rgba(110, 78, 32, 0.411);
-  border-radius: 50px;
   margin-top: 5%;
   margin-bottom: 5%;
+  max-height: 250px;
 }
 
 div.productCard {
@@ -129,11 +226,6 @@ div.productCard {
   border-radius: 50px;
   border-width: 10px;
   color: rgba(49, 28, 16);
-}
-
-.nav-bar {
-  font-size: 30px;
-  text-align: center;
 }
 
 #trolly-icon {
@@ -144,24 +236,24 @@ div.productCard {
 /* 
 Pei Ends */
 
-
 .products_wrapper {
+  margin-top: 40px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .productCard {
-  width: 25%;
+  width: 18%;
+  margin: 15px 15px 45px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 2px solid rgb(82, 71, 71);
   border-radius: 10px;
-  padding: 0.5%;
-  margin: 1%;
+  padding: 25px;
   font-size: 2em;
 }
 
@@ -169,13 +261,10 @@ Pei Ends */
     border: 3px solid black;
     transform: scale(1.1);
     transition: 0.5s all;
-
+    background-color: rgba(000, 000, 000, 0.2)
 }
 
-.bier-img {
-  height: 410px;
-  width: 330px;
-}
+
 
 .bier-name {
   margin: 0px;
@@ -183,12 +272,22 @@ Pei Ends */
 }
 
 .bier-color {
-  margin: 5px;
+  text-shadow:none;
+  font-size: 1.4rem;
+  margin: 0px;
 }
 
 .bier-country {
+  text-shadow:none;
+  font-size: 1.4rem;
   font-style: italic;
-  margin: 0;
+  margin: 0px;
+}
+
+.bier-price {
+  margin: 0px 0px 10px 0px;
+  text-shadow:none;
+
 }
 
 .shop-cart-btn {
@@ -206,6 +305,28 @@ Pei Ends */
 .shop-cart-btn:hover{
     background-color: rgba(83, 243, 136, 0.60);
     transition: 0.5s all;
+}
 
+.shop-cart-btn-dlt{
+  border: 2px solid #fff;
+  text-shadow: 2px 2px 3px#000;
+  color: aliceblue;
+  font-size: 35px;
+  border-radius: 18px;
+  width: 330px;
+  height: 48px;
+  font-weight: 600;
+  background-color: rgba(251, 50, 43, 0.6);
+    
+}
+.shop-cart-btn-dlt:hover{
+    background-color: rgba(253, 228, 5, 0.6);
+    transition: 0.5s all;
+}
 
+input{
+  outline: none 
+}
+button{
+  outline: none 
 }
