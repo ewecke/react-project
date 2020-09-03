@@ -10,7 +10,6 @@ export default function NotFound() {
             <img src="https://us.123rf.com/450wm/kongvector/kongvector2005/kongvector200513205/147673751-gloomy-face-of-glass-of-beer-cartoon-character-with-404-boards.jpg?ver=6" alt="page not found"/>
             <br/><br/>
             <div><Link to="/">Go back to home page</Link></div>
-            
         </div>
     )
 }

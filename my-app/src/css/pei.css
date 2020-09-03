@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
 * {
-  background-color: rgb(180, 127, 51);
+  background: url(../img/main-background.jpg) fixed;
+  background-size: cover;
+  background-repeat: repeat-y;
+  font-family: 'Carter One', cursive;
 }
 .header {
   font-family: 'Carter One', cursive;
   font-size: 80px;
   color: rgb(226, 236, 102);
-  margin-left: 10%;
+  text-align: center;
 }
 
 .logo {
@@ -17,14 +20,17 @@
 .about {
   font-family: 'Carter One', cursive;
   font-size: 40px;
+  margin-left: 3%;
   color: rgb(226, 236, 102);
 }
 
 .column {
+  color: rgba(49, 28, 16);
   float: left;
   width: 30%;
   padding: 5px;
   margin-left: 1%;
+  font-size: 22px;
 }
 
 .row::after {
@@ -32,3 +38,54 @@
   clear: both;
   display: table;
 }
+
+.h3Color {
+  color: rgb(226, 236, 102);
+}
+
+footer {
+  color: rgb(46, 32, 32);
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.brezel {
+  width: 7%;
+}
+
+/* Pei< */
+.bier-img {
+  box-shadow: -30px 20px 5px rgba(110, 78, 32, 0.411);
+  border-radius: 50px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+div.productCard {
+  border: 10px solid rgba(49, 28, 16, 0.664);
+  border-radius: 50px;
+  border-width: 10px;
+  color: rgba(49, 28, 16);
+}
+
+.nav-bar {
+  font-size: 30px;
+  text-align: center;
+}
+
+.shop-cart-btn {
+  font-size: 24px;
+  color: rgba(49, 28, 16);
+  text-shadow: 3px 2px 5px white;
+  border-radius: 15px;
+  border-width: 5px;
+  width: 35%;
+  height: 10%;
+}
+
+#trolly-icon {
+  font-size: 40px;
+}
+
+/* > Pei */

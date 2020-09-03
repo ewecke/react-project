@@ -1,13 +1,14 @@
-import React, {Component} from 'react'
-import {BrowserRouter, Switch, Route} from "react-router-dom"
-import data from "../Data/data.json"
-import App from "../App"
-import Cart from "./Cart"
-import Header from "./Header"
+import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import data from '../Data/data.json';
+import App from '../App';
+import Cart from './Cart';
+import Header from './Header';
 import About from './About';
 import Help from "./Help"
 import NotFound from "./NotFound"
 import Search from "./Search" 
+import Footer from './Footer';
 
 
 export default class Main extends Component {
@@ -77,4 +78,5 @@ export default class Main extends Component {
         </BrowserRouter>
         )
     }
+
 }
