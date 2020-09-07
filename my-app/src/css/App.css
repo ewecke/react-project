@@ -183,6 +183,10 @@ a {
   font-size: 22px;
 }
 
+.column, p {
+  font-size: 18px;
+}
+
 .row::after {
   content: '';
   clear: both;
